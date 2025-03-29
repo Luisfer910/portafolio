@@ -1,0 +1,3 @@
+.navbar{
+    background-color: #162d5c !important; /* !important lo tuve que usar  para que sobrescriba la clase de Bootstrap (bg-body-tertiary).*/
+}
