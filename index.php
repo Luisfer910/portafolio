@@ -43,7 +43,7 @@
         </div>
     </section>
   
-    <?php include 'portafolio.php'; ?> // Incluye la sección de portafolio desde un archivo externo para mejorar la organización del código.
+    <?php include 'portafolio.php'; ?> <!-- Incluye la sección de portafolio desde un archivo externo para mejorar la organización del código.-->
 
     <section class="acerca-de" id="acerca-de">
         <h2 class="titulo">Acerca De Mí</h2>
@@ -53,7 +53,7 @@
       </div>
     </section>
 
-    <?php include 'contacto.php'; ?> // Incluye la sección de contacto desde un archivo externo para mantener el archivo principal más limpio.
+    <?php include 'contacto.php'; ?> <!-- Incluye la sección de contacto desde un archivo externo para mantener el archivo principal más limpio.-->
 
     <section class="Footer" id="Footer">
         <div class="container">

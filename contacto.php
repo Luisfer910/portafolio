@@ -2,7 +2,7 @@
     <h2 class="titulo">Contáctame</h2>
     <hr class="hr">
     <div class="container formulario">
-        <form>
+        <form action="procesar_contacto.php" method="POST"> <!-- incorporo el archivo en donde se enviaran los datos -->
             <!-- Campo para ingresar el nombre del usuario -->
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre:</label>
