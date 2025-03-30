@@ -23,10 +23,17 @@ $proyectos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     $proyecto = $proyectos[$i];
             ?>
                 <div class="col-sm-4 verde verde-<?php echo $i + 1; ?>"> 
-                    <!-- Imagen, título y descripción del proyecto -->
+                    <!-- Imagen y título del proyecto -->
                     <img class="img-portafolio" src="<?php echo htmlspecialchars($proyecto['imagen']); ?>" alt="<?php echo htmlspecialchars($proyecto['titulo']); ?>">
                     <h3><?php echo htmlspecialchars($proyecto['titulo']); ?></h3>
-                    <p><?php echo htmlspecialchars($proyecto['descripcion']); ?></p>
+                    
+                    <!-- Botón para mostrar/ocultar la descripción -->
+                    <button class="btn-descripcion" onclick="toggleDescripcion(<?php echo $i; ?>)">Descripción</button>
+                    
+                    <!-- Descripción oculta por defecto -->
+                    <p id="descripcion-<?php echo $i; ?>" class="descripcion" style="display: none;">
+                        <?php echo htmlspecialchars($proyecto['descripcion']); ?>
+                    </p>
                 </div>
             <?php 
                 endif;
@@ -35,3 +42,16 @@ $proyectos = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 </section>
+
+<script>
+    // Función para mostrar/ocultar la descripción
+    function toggleDescripcion(index) {
+        const descripcion = document.getElementById(`descripcion-${index}`);
+        if (descripcion.style.display === "none") {
+            descripcion.style.display = "block"; // Mostrar descripción
+        } else {
+            descripcion.style.display = "none"; // Ocultar descripción
+        }
+    }
+</script>
+
