@@ -42,21 +42,9 @@
             </div>
         </div>
     </section>
-    <section class="portafolio" id="portafolio">  <div class="titulo"><h2>Portafolio</h2></div>
-        <hr class="hr">
-          <div class="container">
-              <div class="row">
-                  <div class="col-sm-4 verde verde-1"> 
-                      <img class="img-portafolio" src="img/galeria.png" alt="Landing-Page">
-                  </div>
-                  <div class="col-sm-4 verde verde-2">
-                    <img class="img-portafolio" src="img/informatica.png" alt="">
-                  </div>
-                  <div class="col-sm-4 verde verde-3">
-                    <img class="img-portafolio" src="img/diseño.png" alt="Diseño">
-                  </div>
-              </div>
-          </div></section>
+  
+    <?php include 'portafolio.php'; ?> // Incluye la sección de portafolio desde un archivo externo para mejorar la organización del código.
+
     <section class="acerca-de" id="acerca-de">
         <h2 class="titulo">Acerca De Mí</h2>
           <hr class="hr">
@@ -65,56 +53,7 @@
       </div>
     </section>
 
-    <section class="contacto" id="contacto">
-        <h2 class="titulo">Contáctame</h2>
-        <hr class="hr">
-        <div class="container formulario">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Nombre:</label>
-              <input 
-                type="text" 
-                class="form-control" 
-                id="name" 
-                aria-describedby="names" 
-                required 
-                pattern="[A-Za-zÀ-ÿ\s]+" 
-                title="Ingresa solo letras y espacios">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input 
-                type="email" 
-                class="form-control" 
-                id="exampleInputEmail1" 
-                aria-describedby="emailHelp" 
-                required>
-            </div>
-            <div class="mb-3">
-              <label for="number" class="form-label">Número de Teléfono</label>
-              <input 
-                type="tel" 
-                class="form-control" 
-                id="number" 
-                required 
-                pattern="\d{9}" 
-                title="Ingresa un número de 9 dígitos">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-              <textarea 
-                class="form-control" 
-                id="exampleFormControlTextarea1" 
-                rows="3" 
-                required 
-                minlength="10" 
-                title="El mensaje debe tener al menos 10 caracteres"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
-        </div>
-      </section>
-      
+    <?php include 'contacto.php'; ?> // Incluye la sección de contacto desde un archivo externo para mantener el archivo principal más limpio.
 
     <section class="Footer" id="Footer">
         <div class="container">
