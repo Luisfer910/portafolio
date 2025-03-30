@@ -16,26 +16,22 @@ $proyectos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="container">
         <!-- Contenedor principal para organizar los elementos del portafolio -->
         <div class="row">
-              <?php foreach ($proyectos as $proyecto): ?>
-                 <!-- Primera columna: Proyecto 1 -->
-                <div class="col-sm-4 verde verde-1"> 
-                          <!-- Cambio la imagen representativa por primer archivo obtenido de la base de datos con id=1 -->
-                     <img class="img-portafolio" src="<?php echo htmlspecialchars($proyecto['imagen']); ?>" alt="<?php echo htmlspecialchars($proyecto['titulo']); ?>">
-                     <h3><?php echo htmlspecialchars($proyecto['titulo']); ?></h3>
-                     <p><?php echo htmlspecialchars($proyecto['descripcion']); ?></p>
+            <?php
+            // Asignar proyectos a los divs correspondientes
+            for ($i = 0; $i < 3; $i++): 
+                if (isset($proyectos[$i])): // Verificar si el proyecto existe en la posición actual
+                    $proyecto = $proyectos[$i];
+            ?>
+                <div class="col-sm-4 verde verde-<?php echo $i + 1; ?>"> 
+                    <!-- Imagen, título y descripción del proyecto -->
+                    <img class="img-portafolio" src="<?php echo htmlspecialchars($proyecto['imagen']); ?>" alt="<?php echo htmlspecialchars($proyecto['titulo']); ?>">
+                    <h3><?php echo htmlspecialchars($proyecto['titulo']); ?></h3>
+                    <p><?php echo htmlspecialchars($proyecto['descripcion']); ?></p>
                 </div>
-            
-            <!-- Segunda columna: Proyecto 2 -->
-            <div class="col-sm-4 verde verde-2">
-                 <!-- Cambio la imagen representativa por primer archivo obtenido de la base de datos con id=2 -->
-                <img class="img-portafolio" src="img/informatica.png" alt="">
-            </div>
-            
-            <!-- Tercera columna: Proyecto 3 -->
-            <div class="col-sm-4 verde verde-3">
-                  <!-- Cambio la imagen representativa por primer archivo obtenido de la base de datos con id=3 -->
-                <img class="img-portafolio" src="img/diseño.png" alt="Diseño">
-            </div>
+            <?php 
+                endif;
+            endfor; 
+            ?>
         </div>
     </div>
 </section>
