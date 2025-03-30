@@ -1,3 +1,71 @@
 .navbar{
+    position: fixed;
+    width: 100%;
     background-color: #162d5c !important; /* !important lo tuve que usar  para que sobrescriba la clase de Bootstrap (bg-body-tertiary).*/
+    padding: 0;
+    z-index: 10;
+}
+.encabezado-card{
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;  
+}
+.img-card{
+    max-width: 20%;
+    max-height: auto;
+    min-width: 140PX;
+    min-height: auto;
+}
+
+.portafolio{
+    background: orange;
+}
+.titulo{
+    text-align: center;
+    padding: 45px 0 20px 0;
+    text-transform: uppercase;
+}
+.hr{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 20PX;
+}
+.container{
+    width: 70%;
+    padding: 20px 0 40px 0;
+}
+.verde{
+    padding:0px 0 20px 0;
+}
+.verde-1{
+    padding-right:10px;
+}
+.verde-2{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.verde-3{
+ padding-left: 10px;
+}
+.img-portafolio{
+    width: 100%;
+    border-radius: 15px;
+}
+.contacto{
+    background-color: orange;
+}
+.Footer{
+    background: rgba(18, 25, 32, 0.714);
+    text-align: center;
+    color: aliceblue;
+}
+.final{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10PX;
+}
+.parrafo{
+    line-height: 1px;
 }
