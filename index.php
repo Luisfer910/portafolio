@@ -49,7 +49,8 @@
         <h2 class="titulo">Acerca De Mí</h2>
           <hr class="hr">
         <div class="container">
-          <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque quas perspiciatis sequi, unde nesciunt atque accusantium eum ullam sapiente totam ex porro labore exercitationem minus necessitatibus, pariatur minima reprehenderit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dolor porro labore, fugiat soluta eius omnis accusantium numquam non ipsa? Neque asperiores rerum commodi, nisi aliquam ullam id voluptatum obcaecati?</p>
+          <p class="lead text-muted">
+          "Soy un desarrollador web con más de 5 años de experiencia creando interfaces intuitivas y atractivas para aplicaciones móviles y sitios web. He trabajado en equipos multidisciplinarios para desarrollar soluciones digitales innovadoras que mejoran la experiencia del usuario."</p>
       </div>
     </section>
 
